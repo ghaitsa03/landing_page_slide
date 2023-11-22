@@ -1,0 +1,380 @@
+<!DOCTYPE = html>
+<html>
+<head>
+<meta name ="viewport" content="width=device-width,
+initial-scale">
+<Style>
+body{
+margin:0;
+font-family :Arial, Helvetica, sans-serif;}
+.navatas{
+overflow:hidden;
+background-color:000000;}
+.navatas a{
+float:left;
+color:#f2f2f2;
+text-lign:center;
+padding : 14px 16px;
+text-decoration:none;
+font-size: 17px;}
+.navatas a:hover{
+background-color:#4CAF50;
+color:yellow;}
+.navatas a: active{
+background-color:#ddd;
+color:black;
+
+.footer-bottom {
+background-image:url("footer.jpeg");
+background-size: 1920px 300px;
+color:#ffffff;
+margin-bottom:5px;
+padding :30px;
+text-align:center;}
+.social-media img {
+	width:30px;
+	height:30px;
+	margin-right:10px;
+}
+.logo a{
+	text-decoration: none;
+	color:#08596A;
+	font-size:30px;
+}
+</style>
+</head>
+
+<DIV class ="navatas">
+<div class="logo">
+		<a href="#">
+		AsiaTenggara.com
+		</a>
+		</div>
+<A href="index.html">Home</A>
+<A href="kontak.html">Kontak</A>
+<A href="#download">Download</A>
+<A href="#tutorial">Tutorial</A>
+</div>
+<div style = "padding-left:25px">
+<style>
+	* {box-sizing:border-box}
+	body {font-family: Verdana,sans-serif;}
+	.mySlides {display:none}
+	
+	/* Slideshow container */
+	.slideshow-container {
+	  max-width: 500px;
+	  position: relative;
+	  margin: auto;
+	}
+
+	/* Caption text */
+	.text {
+	  color: #f2f2f2;
+	  color.i:#black;
+	  font-size: 30px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  bottom: 8px;
+	  width: 100%;
+	  text-align: center;
+	}
+
+	/* Number text (1/3 etc) */
+	.numbertext {
+	  color: #f2f2f2;
+	  font-size: 12px;
+	  padding: 8px 12px;
+	  position: absolute;
+	  top: 0;
+	}
+	
+	/* The dots/bullets/indicators */
+	.dot {
+	  height: 13`px;
+	  width: 13px;
+	  margin: 0 2px;
+	  background-color: #bbb;
+	  border-radius: 50%;
+	  display: inline-block;
+	  transition: background-color 0.6s ease;
+	}
+
+	.active {
+	  background-color: #717171;
+	}
+	
+	/* Fading animation */
+	.fade {
+	  -webkit-animation-name: fade;
+	  -webkit-animation-duration: 1.5s;
+	  animation-name: fade;
+	  animation-duration: 1.5s;
+	}
+	
+
+	@-webkit-keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+
+	@keyframes fade {
+	  from {opacity: .4} 
+	  to {opacity: 1}
+	}
+	
+
+	/* On smaller screens, decrease text size */
+	@media only screen and (max-width: 300px) {
+	  .text {font-size: 11px}
+	}
+	</style>
+	</head>
+	<body>
+	
+
+	<h2>ASIA TENGGARA</h2>
+	<div class="slideshow-container">
+	
+
+	<div class="mySlides fade">
+	  <div class="numbertext">1 / 6</div>
+	  <a href="#indonesia">
+	  <img src="indonesia.jpg" style="width:100%"></a>
+	  <div class i ="text ">Indonesia</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">2 / 6</div>
+	  <a href="#malaysia">
+	  <img src="malaysia.jpg" style="width:100%">
+	  <div class i="text">Malaysia</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">3 / 6</div>
+	  <a href="#singapura">
+	  <img src="singapura.jpg" style="width:100%">
+	  <div class i="text">Singapura</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">4 / 6</div>
+	  <a href="#kamboja">
+	  <img src="kamboja.jpg" style="width:100%"></a>
+	  <div class="text">Kamboja</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">5/ 6</div>
+	  <a href="#filiphina">
+	  <img src="filiphina.jpg" style="width:100%"></a>
+	  <div class="text">Filiphina</div>
+	</div>
+	
+	<div class="mySlides fade">
+	  <div class="numbertext">6/ 6</div>
+	  <a href="#laos">
+	  <img src="laos.jpg" style="width:100%"></a>
+	  <div class="text">Laos</div>
+	</div>
+
+	</div>
+	<br>
+	
+	<div style="text-align:center">
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	  <span class="dot"></span> 
+	</div>
+	
+	<script>
+	var slideIndex = 0;
+	showSlides();
+	
+
+	function showSlides() {
+	    var i;
+	    var slides = document.getElementsByClassName("mySlides");
+	    var dots = document.getElementsByClassName("dot");
+	    for (i = 0; i < slides.length; i++) {
+	       slides[i].style.display = "none";  
+	    }
+	    slideIndex++;
+	    if (slideIndex> slides.length) {slideIndex = 1}    
+	    for (i = 0; i < dots.length; i++) {
+	        dots[i].className = dots[i].className.replace(" active", "");
+	    }
+	    slides[slideIndex-1].style.display = "block";  
+	    dots[slideIndex-1].className += " active";
+	    setTimeout(showSlides, 2000); // Change image every 2 seconds
+	}
+	</script>
+	
+	<div style = "padding-left:25px">
+	<H1 ID ="indonesia">Indonesia</H1>
+<h2>Sejarah</h2>
+<p>Sejarah Indonesia meliputi suatu rentang waktu yang sangat panjang yang dimulai sejak zaman prasejarah berdasarkan penemuan "Manusia Jawa" yang berusia 1,7 juta tahun yang lalu. Periode sejarah Indonesia dapat dibagi menjadi
+ lima era: Era Prakolonial, munculnya kerajaan-kerajaan Hindu-Buddha dan Islam di Jawa, Sumatra, dan Kalimantan yang terutama mengandalkan perdagangan; Era Kolonial, masuknya orang-orang Eropa (terutama Belanda, Portugis, dan Spanyol)
+ yang menginginkan rempah-rempah mengakibatkan penjajahan oleh Belanda selama sekitar 3,5 abad antara awal abad ke-17 hingga pertengahan abad ke-20; Era Kemerdekaan Awal, pasca-Proklamasi Kemerdekaan Indonesia (1945) sampai jatuhnya Soekarno (1966);
+ Era Orde Baru, 32 tahun masa pemerintahan Soeharto (1966–1998); serta Orde Reformasi yang berlangsung sampai sekarang.</p>
+<h2>Geografi</h2>
+<p>Indonesia merupakan negara kepulauan terbesar di dunia yang berada di Asia Tenggara, dan terletak di antara benua Asia dan benua Australia/Oseania, serta di antara Samudra Hindia dan Samudra Pasifik. Negara ini memiliki 17.504
+pulau yang menyebar di sekitar khatulistiwa; sebanyak 16.056 pulau telah dibakukan namanya, dan sekitar 6.000 pulau tidak berpenghuni. Pulau-pulau besar di Indonesia yaitu Sumatra, Jawa, Kalimantan (berbagi dengan Malaysia dan Brunei Darussalam), Sulawesi, dan Papua (berbagi dengan Papua Nugini).
+Indonesia berada pada koordinat antara antara 6° 04' 30" LU dan 11° 00' 36" LS serta antar 94° 58' 21" dan 141° 01' 10" BT, yang membentang sepanjang 5.120 kilometer (3.181 mil) dari timur ke barat serta 1.760 kilometer 
+(1.094 mil) dari utara ke selatan.[240] Luas daratan Indonesia adalah 1.916.906,77 km², sementara luas perairannya sekitar 3.110.000 km² dengan garis pantai sepanjang 108 ribu km. Batas wilayah Indonesia diukur dari kepulauan 
+dengan menggunakan teritorial laut 12 mil laut serta zona ekonomi eksklusif 200 mil laut.Titik tertinggi di Indonesia yaitu Puncak Jaya (4.884 mdpl) di Provinsi Papua Tengah. Danau Toba di Sumatera Utara adalah danau terluas di
+Indonesia sekaligus danau kaldera terbesar di dunia,sedangkan sungai terpanjang di Indonesia yaitu Sungai Kapuas yang berada di Kalimantan Barat.[246] </P></div>
+
+<div style = "padding-left:25px">
+	<H1 ID ="malaysia">Malaysia</H1>
+<h2>Sejarah</h2>
+<h3>Pra Sejarah</h3>
+<p>Sisa-sisa arkeologis ditemukan di seluruh negara. Orang Semang memiliki leluhur jauh di Semenanjung Malaya, hingga pada permukiman pertama di Afrika,
+ lebih dari 50.000 tahun lalu. Orang Senoi juga ada, sebagai kelompok campuran; hampir sebagian silsilah mereka berasal dari garis nenek moyang Semang dan
+ sebagiannya lagi Indocina. Percampuran ini sesuai dengan dugaan bahwa mereka mewakili keturunan penutur Austronesia kuno, yaitu para petani yang membawa bahasa
+ dan teknologi mereka ke bagian selatan semenanjung kira-kira 5.000 tahun lalu dan menyatu dengan penduduk asli. Orang Proto Melayu lebih beraneka ragam, dan meskipun
+ mereka menunjukkan beberapa kaitan dengan Asia Tenggara kepulauan, beberapa di antaranya juga memiliki leluhur di Indocina dari zaman Maksimum Glasial Terakhir, 
+ diikuti oleh penyebaran Holosen-dini melalui Semenanjung Malaya ke Asia Tenggara kepulauan.</p>
+<h3>Sejarah Awal</h3>
+<p>Semenanjung Malaya berkembang sebagai pusat perdagangan utama di Asia Tenggara karena pertumbuhan perdagangan antara Tiongkok dan India dan negara lainnya melalui Selat Malaka yang ramai. Claudius
+ Ptolemaeus menunjukkan Semenanjung Malaya pada peta dininya, "Golden Chersonese" dengan Selat Malaka ditulis sebagai "Sinus Sabaricus".[44] Dari pertengahan hingga akhir milenium pertama, sebagian besar 
+ semenanjung, termasuk Nusantara, berada di bawah pengaruh Sriwijaya.
+Kerajaan Melayu yang paling awal tercatat dalam sejarah mulai bertumbuh dari kota pelabuhan tepi pantai yang mulai dihuni pada abad ke-10. Di antara kerajaan-kerajaan ini termasuk Langkasuka dan 
+Lembah Bujang di Kedah, dan juga Beruas dan Gangga Negara di Perak dan Pan Pan di Kelantan. Diperkirakan semuanya adalah kerajaan Hindu atau Buddha. Islam tiba pada abad ke-14 di Terengganu.
+Benteng A Famosa di Melaka. Bangunan itu didirikan oleh bangsa Portugis pada abad ke-15.
+Terdapat banyak kerajaan Tiongkok dan India pada abad ke-2 dan ke-3 M — sebanyak 30 buah menurut sumber Tiongkok. Kedah — yang dikenal sebagai Kedaram, Cheh-Cha (menurut I-Ching), atau Kataha di dalam 
+tulisan Palawa atau bahasa Sanskerta kuno — berada di jalur keramaian pedagang dan raja Sriwijaya dan raja dari India. Rajendra Chola, seorang kaisar Tamil kuno yang diduga berada di sekitar Kota Gelanggi,
+ menaklukkan Kedah pada 1025, tetapi penerusnya, Vira Rajendra Chola, harus melumpuhkan pemberontakan Kedah untuk mengatasi para penyerbu. Kedatangan Chola berhasil meredam keagungan Sriwijaya, yang memberi 
+ pengaruh besar kepada Kedah dan Pattani bahkan sampai ke Ligor.
+Kerajaan Buddhis Ligor segera kembali mengendalikan Kedah. Rajanya, Chandrabhanu, menggunakan tempat ini sebagai basis untuk menyerang Sri Lanka pada abad ke-11, sebuah peristiwa yang dipahat di atas prasasti
+ batu di Nagapattinum di Tamil Nadu dan di dalam kisah-kisah bangsa Sri Lanka, Mahavamsa. Selama milenium pertama, masyarakat di Semenanjung Malaya beragama Hindu dan Buddha dan berbahasa Sanskerta, hingga mereka beralih kepada Islam.
+Ada beberapa laporan dari wilayah lain yang lebih tua dari Kedah—misalnya kerajaan kuno Gangga Negara, di sekitar Beruas di Perak, mendorong sejarah Malaysia lebih jauh ke belakang. Jika itu belum cukup, sebuah 
+puisi Tamil, Pattinapillai, dari abad ke-2 M, menjelaskan barang-barang dari Kadaram menumpuk di jalanan ibu kota Chola, Sebuah drama sanskerta dari abad ke-7, Kaumudhimahotsva, merujuk Kedah sebagai Kataha-nagari.
+ Agnipurana juga menyebutkan sebuah daerah yang dikenal Anda-Kataha dengan salah satu batasnya menggambarkan sebuah puncak gunung, yang diyakini para sarjana sebagai Gunung Jerai. Kisah-kisah dari Katasaritasagaram menjelaskan kemewahan hidup di Kataha.
+Gedung Sultan Abdul Samad di Kuala Lumpur, kompleks Pengadilan Tinggi Malaysia dan Pengadilan Perdagangan. Kuala Lumpur adalah ibu kota Negara-negara Melayu Bersekutu dan ibu kota Malaysia saat ini.
+Pada permulaan abad ke-15, Kesultanan Melaka didirikan di bawah sebuah dinasti yang didirikan oleh Parameswara, pangeran dari Palembang, Indonesia, di dalam kerajaan Sriwijaya. Penaklukan memaksa dia dan pendukungnya melarikan diri dari Palembang. Untuk menghindari serangan dari Majapahit, Parameswara berlayar ke Temasek demi mendapatkan perlindungan Temagi, seorang penghulu Melayu dari Pattani yang ditunjuk oleh Raja Siam sebagai bupati Temasek. Beberapa hari kemudian, Parameswara membunuh Temagi dan mengangkat dirinya sendiri sebagai bupati. Kira-kira lima tahun kemudian, dia meninggalkan Temasek karena ancaman dari Siam. Selama periode ini, Temasek juga diserang oleh serombongan armada Jawa dari Majapahit, Dan Tamasek jadi kekuasaan dari Majapahit,
+Dia kemudian memimpin ke utara untuk mendirikan permukiman baru. Di Muar, Parameswara berkehendak mendirikan kerajaan barunya di Biawak Busuk atau di Kota Buruk. Mengetahui lokasi Muar tidaklah cocok, dia meneruskan perjalanannya
+ ke utara. Di sepanjang jalan, dia mengunjungi Sening Ujong (nama lama untuk Sungai Ujong modern) sebelum sampai di sebuah perkampungan nelayan di bibir Sungai Bertam (nama lama untuk Sungai Melaka modern). Tempat itu lambat laun berkembang menjadi lokasi Melaka masa kini. Menurut Sejarah Melayu, di situlah dia menyaksikan kancil mengelabui anjing ketika berteduh di bawah pohon Melaka. Dia mengambil apa yang dia lihat sebagai pertanda yang baik dan kemudian dia mendirikan sebuah kerajaan yang disebut Melaka, kemudian dia membangun dan memperbaiki fasilitas untuk tujuan perdagangan.
+Peralihan agama Parameswara ke Islam tidaklah jelas. Sabri Zain mengemukakan, Parameswara menjadi seorang Muslim ketika dia menikahi seorang Puteri Samudera Pasai dan menyertakan gelar bergaya Persia "Syah", dengan menyebut dirinya
+ Iskandar Syah.[45] Juga ada referensi yang menunjukkan bahwa beberapa anggota kelas penguasa dan komunitas saudagar yang menetap di Melaka telah menjadi Muslim. Kisah-kisah Tiongkok menyebutkan bahwa pada 1414, putera penguasa pertama Melaka mengunjungi Ming untuk mengabari mereka bahwa ayahnya telah wafat. Putera Parameswara diakui secara resmi sebagai penguasa kedua Melaka oleh Kaisar Tiongkok dan bergelar Raja Sri Rama Vikrama, Raja Parameswara dari Temasik dan Melaka dan dia dikenal sebagai tokoh Muslim Sultan Sri Iskandar Zulkarnain Syah atau Sultan Megat Iskandar Syah, dan dia menguasai Melaka dari 1414 sampai 1424.[46][47] Kerajaan ini menguasai wilayah yang sekarang ini disebut Semenanjung Malaya, selatan Thailand (Pattani, dan pantai timur Sumatra. Kerajaan ini berlangsung selama lebih dari satu abad, dan dalam periode tersebut menyebarkan Islam ke seluruh Nusantara. Melaka, sebagai pelabuhan perdagangan penting, terletak hampir di tengah-tengah rute perdagangan Tiongkok dan India. Dan kemudia melaka di kuasai majapahit dari jawa dan beberapa tahun kemudian pada 1511, Melaka direbut oleh Portugal, yang mendirikan sebuah koloni di sana; maka berakhirlah Kesultanan Melaka. Tetapi, Sultan terakhir melarikan diri ke Kampar, Riau, Sumatra dan meninggal di sana. Putera-putera Sultan Melaka terakhir mendirikan dua kesultanan di tempat lain di semenanjung yakni Kesultanan Perak di utara dan Kesultanan Johor (awalnya kelanjutan dari kesultanan Melaka kuno) di selatan. Setelah jatuhnya Melaka, tiga negara berjuang menguasai Selat Malaka: Portugis (di Melaka), Kesultanan Johor, dan Kesultanan Aceh. Konflik ini berlangsung sampai tahun 1641, ketika Belanda (bersekutu dengan Kesultanan Johor) untuk merebut Melaka.
+Kerajaan ini merupakan kelanjutan dari Kesultanan Melaka tua, tetapi sekarang dikenal dengan nama Kesultanan Johor, yang masih ada sampai sekarang. Setelah jatuhnya Melaka, tiga negara berebut untuk mengambil kontrol Selat Malaka: 
+Portugis (di Melaka), Kesultanan Johor, dan Kesultanan Aceh; dan peperangan berakhir pada 1641, ketika Belanda (bersekutu dengan Kesultanan Johor) merebut Melaka.</p>
+<h2>Geografi</h2>
+<p>Malaysia adalah negara berpenduduk terbanyak ke-43 dan negara dengan daratan terluas ke-66 di dunia, dengan jumlah penduduk kira-kira 33 juta dan luas wilayah melebihi 330.000 km2. Jumlah penduduk sedemikian cukup sebanding dengan jumlah penduduk Arab Saudi dan Venezuela, dan luas wilayah sedemikian sebanding dengan luas wilayah Norwegia dan Vietnam, atau New Mexico, sebuah negara bagian di Amerika Serikat.
+Malaysia terdiri atas dua kawasan utama yang terpisah oleh Laut Tiongkok Selatan. Keduanya memiliki bentuk muka bumi yang hampir sama, yaitu dari pinggir laut yang landai hingga hutan lebat dan bukit tinggi. Puncak tertinggi di Malaysia (dan juga di Kalimantan) yaitu Gunung Kinabalu setinggi 4.095,2 meter di Sabah. Iklim lokal adalah khatulistiwa dan dicirikan oleh angin muson barat daya (April hingga Oktober) dan timur laut (Oktober hingga Februari).
+Tanjung Piai, terletak di selatan negara bagian Johor, adalah tanjung paling selatan benua Asia.[71][72] Selat Malaka, terletak di antara Sumatra dan Semenanjung Malaysia, jalur pelayaran terpenting di dunia.[73]
+Kuala Lumpur adalah ibu kota resmi dan kota terbesar di Malaysia. Putrajaya di pihak lain, dipandang sebagai ibu kota administratif pemerintahan persekutuan Malaysia. Meskipun banyak cabang eksekutif dan yudikatif pemerintahan persekutuan telah pindah ke sana (untuk menghindari kemacetan yang tumbuh di Kuala Lumpur), tetapi Kuala Lumpur masih dipandang sebagai ibu kota legislatif Malaysia karena di sanalah beradanya kompleks gedung Parlemen Malaysia. Kuala Lumpur juga merupakan pusat perdagangan dan keuangan Malaysia.
+Kota utama lain termasuk Ipoh, George Town, Johor Bahru, Kuching, Kota Kinabalu, Miri, Alor Setar, Kota Melaka, dan Petaling Jaya. </P></div>
+	
+	<div style = "padding-left:25px">
+	<H1 ID ="singapura">Singapura</H1>
+<h2>Sejarah</h2>
+<p>Singapura adalah peranan yang kecil di dalam perkembangan sejarah Asia Tenggara sampai Sir Stamford Raffles mendirikan sebuah pelabuhan Inggris di situ. Di bawah pemerintahan kolonial Inggris, Singapura telah berubah menjadi pelabuhan yang amat strategis mengingat letaknya yang ada di tengah-tengah jalur perdagangan di antara India dan Cina yang akhirnya menjadi antara pelabuhan yang terpenting di dunia sampai hari ini. Semasa Perang Dunia II, Singapura telah diduduki oleh tentara Jepang dari tahun 1942 hingga tahun 1945.
+Selepas perang, penduduk setempat dibenarkan menjalankan pemerintahan sendiri tetapi masih belum mencapai kemerdekaan. Seterusnya pada tahun 1963 Singapura telah bergabung dengan Tanah Melayu bersama-sama dengan Sabah dan Sarawak untuk membentuk Malaysia. Tetapi Singapura dikeluarkan dari Malaysia dan menjadi sebuah republik pada 9 Agustus 1965.</p>
+<h3>Sejarah Silam</h3>
+<p>Referensi awal untuk nama Temasek (atau Tumasik) ditemukan di Nagarakretagama, sebuah pidato bahasa Jawa yang ditulis pada tahun 1365, dan sumber Vietnam dari periode waktu yang sama. Namanya mungkin berarti "Kota Laut", yang berasal dari bahasa Melayu tasek, yang berarti "laut" atau "danau".[1]
+Dipercaya bahwa Singapura merupakan pusat pemerintahan Kerajaan Melayu sebelum diduduki oleh Sir Stamford Raffles, seorang gubernur jenderal Imperium Britania. Berdasarkan tulisan Abdullah bin Abdul Kadir Munsyi yang menyatakan ketika Singapura dibersihkan, bukit yang terdapat di situ telah dikenali sebagai ”bukit larangan”, dan terdapat banyak pohon buah yang ditanam di situ. Ini menunjukkan terdapat sebuah pusat administrasi.
+Selain itu, Abdullah bin Abdul Kadir Munsyi turut menyatakan ditemukannya sebuah batu bersurat yang mempunyai ukiran tulisan yang tidak dikenali dan telah kabur. Prasasti Singapura itu menunjukkan Singapura telah menjadi sebuah pusat administrasi sejak silam lama sebelum tibanya pihak Inggris.
+Malangnya prasasti itu telah dimusnahkan tidak lama selepas tibanya Inggris oleh seorang insinyur Inggris. Namun, terdapat nota mengenai sebuah salinan tulisan tersebut yang telah diantarkan ke London, tetapi gagal ditafsirkan. Sekiranya catatan salinan tulisan itu dapat dijumpai kembali, ia bisa memberikan perkiraan kapan prasasti itu diukir melalui terjemahan ataupun sekiranya masih gagal diterjemahkan, melalui jenis tulisan yang digunakan.</p>
+<h2>Geografi</h2>
+<p>Singapura terdiri dari 63 pulau, termasuk daratan Singapura. Pulau utama sering disebut Pulau Singapura tetapi secara resmi disebut Pulau Ujong (Melayu: berarti pulau di ujung daratan 
+(semenanjung)). Terdapat dua jembatan buatan menuju Johor, Malaysia: Jalan Layang Johor–Singapura di utara dan Penghubung Kedua Malaysia–Singapura di barat. Pulau Jurong, Pulau Tekong,
+ Pulau Ubin dan Pulau Sentosa adalah pulau-pulau yang terbesar dari beberapa pulau kecil di Singapura. Titik alami tertinggi adalah Bukit Timah Hill dengan tinggi 166 m (545 ft).
+Singapura memiliki banyak proyek reklamasi tanah dengan tanah diperoleh dari bukit, dasar laut, dan negara tetangga. Hasilnya, daratan Singapura meluas dari 581,5 km2 (224,5 sq mi) 
+pada 1960-an menjadi 704 km2 (271,8 sq mi) pada hari ini, dan akan meluas lagi hingga 100 km2 (38,6 sq mi) pada 2030.[39] Proyek ini kadang mengharuskan beberapa pulau kecil digabungkan 
+melalui reklamasi tanah untuk membentuk pulau-pulau besar dan berguna, contohnya Pulau Jurong.</P></div>
+
+	<div style = "padding-left:25px">
+	<H1 ID ="kamboja">Kamboja</H1>
+<h2>Sejarah</h2>
+<p>Perkembangan peradaban Kamboja terjadi pada abad 1 Masehi. Selama abad ke-3,4 dan 5 Masehi, negara Funan dan Chenla bersatu untuk membangun daerah Kamboja. Negara-negara ini mempunyai hubungan dekat dengan Cina dan India. Kekuasaan dua negara ini runtuh ketika Kerajaan Khmer dibangun dan berkuasa pada abad ke-9 sampai abad ke-13.
+
+Kerajaan Khmer masih bertahan hingga abad ke-15. Ibu kota Kerajaan Khmer terletak di Angkor, sebuah daerah yang dibangun pada masa kejayaan Khmer. Angkor Wat, yang dibangun juga pada saat itu, menjadi simbol bagi kekuasaan Khmer.
+
+Pada tahun 1432, Khmer dikuasai oleh Kerajaan Thai. Dewan Kerajaan Khmer memindahkan ibu kota dari Angkor ke Lovek, di mana Kerajaan mendapat keuntungan besar karena Lovek adalah bandar pelabuhan. Pertahanan Khmer di Lovek akhirnya bisa dikuasai oleh Thai dan Vietnam, dan juga berakibat pada hilangnya sebagian besar daerah Khmer. Peristiwa ini terjadi pada tahun 1594. Selama 3 abad berikutnya, Khmer dikuasai oleh Raja-raja dari Thai dan Vietnam secara bergilir.
+
+Pada tahun 1863, Raja Norodom, yang dilantik oleh Thai, mencari perlindungan kepada Prancis. Pada tahun 1867, Raja Norodom menandatangani perjanjian dengan pihak Prancis yang isinya memberikan hak kontrol provinsi Battambang dan Siem Reap yang menjadi bagian Thai. Akhirnya, kedua daerah ini diberikan pada Kamboja pada tahun 1906 pada perjanjian perbatasan oleh Prancis dan Thai.
+
+Kamboja dijadikan daerah Protektorat oleh Prancis dari tahun 1863 sampai dengan 1953, sebagai daerah dari Koloni Indochina. Setelah penjajahan Jepang pada 1940-an, akhirnya Kamboja meraih kemerdekaannya dari Prancis pada 9 November 1953. Kamboja menjadi sebuah kerajaan konstitusional dibawah kepemimpinan Raja Norodom Sihanouk.
+
+Pada saat Perang Vietnam tahun 1960-an, Kerajaan Kamboja memilih untuk netral. Hal ini tidak dibiarkan oleh petinggi militer, yaitu Jendral Lon Nol dan Pangeran Sirik Matak yang merupakan aliansi pro-AS untuk menyingkirkan Norodom Sihanouk dari kekuasaannya. Dari Beijing, Norodom Sihanouk memutuskan untuk beraliansi dengan gerombolan Khmer Merah, yang bertujuan untuk menguasai kembali tahtanya yang direbut oleh Lon Nol. Hal inilah yang memicu perang saudara timbul di Kamboja.
+
+Khmer Merah akhirnya menguasai daerah ini pada tahun 1975, dan mengubah format Kerajaan menjadi sebuah Republik Demokratik Kamboja yang dipimpin oleh Pol Pot. Mereka dengan segera memindahkan masyarakat perkotaan ke wilayah pedesaan untuk dipekerjakan di pertanian kolektif. Pemerintah yang baru ini menginginkan hasil pertanian yang sama dengan yang terjadi pada abad 11. Mereka menolak pengobatan Barat yang berakibat rakyat Kamboja kelaparan dan tidak ada obat sama sekali di Kamboja.
+
+Pada November 1978, Vietnam menyerbu RD Kamboja untuk menghentikan genosida besar-besaran yang terjadi di Kamboja. Akhirnya, pada tahun 1989, perdamaian mulai digencarkan antara kedua pihak yang bertikai ini di Paris. PBB memberi mandat untuk mengadakan gencatan senjata antara pihak Norodom Sihanouk dan Lon Nol.
+
+Sekarang, Kamboja mulai berkembang berkat bantuan dari banyak pihak asing setelah perang, walaupun kestabilan negara ini kembali tergoncang setelah sebuah kudeta yang gagal terjadi pada tahun 1997</p>
+<h2>Geografi</h2>
+<p>Kamboja mempunyai area seluas 181.035 km2. Berbatasan dengan Thailand di barat dan utara, Laos di timurlaut dan Vietnam di timur dan tenggara. Kenampakan geografis yang menarik di Kamboja ialah adanya dataran lacustrine yang terbentuk akibat banjir di Tonle Sap. Gunung tertinggi di Kamboja adalah Gunung Phnom Aoral yang berketinggian sekitar 1.813 mdpl.</P></div>
+
+	<div style = "padding-left:25px">
+	<H1 ID ="filiphina">Filiphina</H1>
+<h2>Sejarah</h2>
+<p>Peninggalan tertulis Filipina dimulai sekitar abad ke-8 berdasarkan temuan lempeng tembaga di dekat Manila. Dari tulisan pada lempeng itu diketahui bahwa Filipina berada dalam pengaruh Sriwijaya. Namun bukti tertulis ini sangat sedikit sehingga bahkan ahli-ahli sejarah Filipina masih beranggapan sejarah Filipina dimulai pada era kolonialisme.
+Sebelum orang-orang Spanyol datang pada abad ke-16, di Filipina berdiri kerajaan-kerajaan kecil yang bercorak animisme yang terpengaruh sedikit kultur India, dan yang bercorak Islam di bagian selatan kepulauan. Kerajaan-kerajaan muslim ini mendapat pengaruh kuat dari Kerajaan Malaka.
+Sepanjang masa 265 tahun, Filipina merupakan koloni Kerajaan Spanyol (1565-1821), dan selama 77 tahun berikutnya diangkat menjadi provinsi Spanyol (1821-1898). Negara ini mendapat nama Filipina setelah diperintah oleh penguasa Spanyol, Raja Felipe II. Setelah Perang Spanyol-Amerika pada tahun 1898, Filipina diperintah Amerika Serikat. 
+Ia kemudian menjadi sebuah persemakmuran di bawah Amerika Serikat sejak tahun 1935. Periode Persemakmuran dipotong Perang Dunia II saat Filipina berada di bawah pendudukan Jepang. Filipina akhirnya memperoleh kemerdekaannya (de facto) pada 4 Juli 1946. Masa-masa penjajahan asing ini sangat memengaruhi kebudayaan, dan masyarakat Filipina. 
+Negara ini dikenal mempunyai Gereja Katolik Roma yang kuat, dan merupakan salah satu dari dua negara yang didominasi umat Katolik di Asia selain Timor Leste.</p>
+<h2>Geografi</h2>
+<p>Filipina terdiri dari 7.107 pulau dengan luas total daratan diperkirakan 343.448 km2. Negara ini terletak antara 116° 40', dan 126° 34' BT, dan 4° 40', dan 21° 10' LU. Di timur dia berbatasan dengan Laut Filipina, di barat dengan Laut Tiongkok Selatan,
+ dan di selatan dengan Laut Sulawesi. Pulau Borneo terletak beberapa ratus kilometer di barat daya, dan Taiwan di utara. Maluku, dan Sulawesi di selatan, dan di timur adalah Palau. Filipina memiliki garis pantai sepanjang 36.289 km (22.549 mil) yang
+ menjadikannya negara dengan garis pantai terpanjang kelima di dunia.Kepulauan ini dibagi menjadi tiga kelompok utama: Luzon (Region I sampai V + NCR & CAR), Bisaya (VI sampai VIII), dan Mindanao (IX sampai XIII + ARMM). Pelabuhan sibuk Manila, di Luzon, 
+ adalah ibu kota negara, dan kota terbesar-kedua setelah Kota Quezon.</P></div>
+
+<div style = "padding-left:25px">
+	<H1 ID ="laos">laos</H1>
+<h2>Sejarah</h2>
+<p>Wilayah Laos telah dihuni manusia selama ribuan tahun. Periode pra-sejarah negara ini tidak terlalu banyak diketahui. Diperkirakan bahwa sejumlah kelompok orang yang berbeda menetap di daerah Laos sebelum abad ke-14. Pada saat itu, wilayah Laos dikendalikan oleh Kerajaan Mon dan Kekaisaran Khmer.
+Fa Ngum, pendiri Kerajaan Lan Xang
+Bangsa Laos modern dianggap memiliki kaitan pada Kerajaan Lan Xang yang berdiri pada pertengahan abad ke-14 dan didirikan oleh Fa Ngum. Sebelum masa tersebut, negara itu sudah dihuni oleh orang Lao, orang Mon, dan kelompok etnis lainnya. Pada abad ke-16, Buddhisme Theravada menjadi agama dominan.
+Dimulai pada pertengahan abad ke-17, Laos mengalami penurunan kondisi ekonomi dan politik. Pada akhir abad ke-18, Laos yang semakin melemah akhirnya ditaklukkan negara tetangga Thailand (Siam). Pada akhir abad ke-19, Prancis yang baru saja menaklukkan Vietnam bernegosiasi dengan Thailand untuk
+ mendapatkan Laos. Pada awal abad ke-20, negara itu sepenuhnya berada di bawah kendali Prancis.
+Selama Perang Dunia II, Jepang menduduki Laos. Setelah perang selesai, bersama dengan Vietnam, Laos lantas menyatakan kemerdekaannya. Prancis merespon dengan mengirimkan tentara dan mengambil kendali wilayah lagi.
+Gerakan nasionalis terus memperjuangkan kemerdekaan, sehingga pada tahun 1950 Prancis menyatakan Laos mendapatkan otonomi. Pada tahun 1954, Laos akhirnya merdeka sepenuhnya sebagai negara monarki konstitusional.
+Setelah kemerdekaannya, Laos mengalami periode ketidakstabilan politik. Hal ini diperparah dengan kepentingan Amerika Serikat di wilayah itu yang membutuhkan basis untuk memerangi Vietnam. Tercatat pemerintah koalisi pertama jatuh pada tahun 1958, meskipun pemerintahan pengganti segera terbentuk,
+tetapi segera jatuh lagi. Laos menyatakan netralitas pada tahun 1962, saat terjadi konflik di Vietnam. Namun hal ini tidak menghentikan Amerika Serikat dan Vietnam Utara untuk membangun basis kekuatan di Laos sehingga menghancurkan sikap resmi bangsa untuk tetap netral. Meskipun Laos berusaha
+mempertahankan demokrasi, ketika AS menarik diri dari wilayah tersebut serta seiring kejatuhan Vietnam Selatan, negara itu diambil alih oleh faksi komunis dengan dukungan militer dari Vietnam Utara.
+Pada akhir tahun 1975, raja dipaksa turun tahta dan Communist Lao People’s Democratic Republic segera dibentuk. Pemerintahan komunis yang didukung Vietnam membuat kondisi ekonomi Laos semakin memburuk. Akhirnya, dimulai pada akhir tahun 1980-an, Laos mulai lebih membuka ekonominya dan memulai 
+perbaikan ekonomi meskipun berjalan lambat.
+Laos adalah negara berdaulat yang memiliki banyak ranjau darat belum meledak hingga ke pedesaan. Pengunjung harus berhati-hati untuk tidak meninggalkan jalur jalan aman dan memperhatikan semua tanda peringatan ranjau darat.
+Beberapa atraksi utama Laos diantaranya adalah Khone Phapheng, air terjun terbesar di Asia Tenggara, Pha That Luang, sebuah kuil Buddha yang indah, dan gua-gua Pak Ou. Plain of Jars juga menjadi tempat yang menarik untuk dikunjungi, terutama oleh arkeolog amatir. Fitur terkenal di Plain of Jars adalah 
+guci batu besar yang berbobot lebih dari enam ton dan berusia sekitar 2000 tahun. Selain itu, terdapat pula ratusan guci lain yang berserakan di daerah itu dengan kegunaan yang belum diketahui pasti.</p>
+<h2>Geografi</h2>
+<p>Negara Laos Secara astronomis, wilayah Laos terletak antara 14°LU – 22°LU dan antara 100°BT – 108°BT. Luas total wilayah ini mencakup 236,800 km2 dan 2% dari wilayah tersebut adalah berupa perairan.</P></div>
+</div>
+<div>
+<h3 id="download">Link Download Lagu Kebangsaan</h3>
+<p><h5><a href="https://cdn2.canehill.info/dl?hash=Xzubq8BegfzlVl6Wuc5h7qdJAZ6YurvvVOq9ce%2B9eOio3r6CtTDZI4aSJ5YUOI%2Bj12oYbAwcvKHIUB89hUWA%2F5HETimZMags9ESa3ay78Ha3osiXdz%2Bhr7sz2s3WwvXjyGTyitJt3bQodo7lmVzPo42E1WUaaUApqhe9gQRx2go2%2FLk27E5K9UL0CLCrhH23Twbc%2FGiECbv9xZeBRwq%2Fk0tLhpEiiKgGgEtVkrJJW6AvHFB4Ab6ROwZi13IESJSE
+">Lagu Kebangsaan Indonesia: Indonesia Raya</a></p></h5>
+<p><h5><a href="https://cdn2.canehill.info/dl?hash=sbfgsOda%2F0n2Ve5XKeR6YGowRaCn2wbv4iqESgSvX%2B1vJuZApjpsViInobwgTQCJFRdOyo9PK0ClpXfsh4jo9VqnOYKznqr4cCmpmiZxG7L%2BMhUPwwuS%2FC6yWQd8TEbc7GvXYJb5Epxw7JaLr7hHrkPn0KlFia8KDXijJ6O5DPHLRTlgDMEH1GiwQk1YU%2FeJKw3%2FjsV4YqhBBKel1F%2BEndQF1qQARMR8qaTXuKBtD1orbCB01KvsSj3Xj64CiDhx
+">Lagu Kebangsaan Kamboja : Noko Reach</a></p></h5>
+<p><h5><a href="https://youtu.be/R27eWgoe-l4?si=BTfX4UFGgQBVTNJx">Lagu Kebangsaan Singapura :Majulah Singapura</a></p></h5>
+<p><h5><a href="https://youtu.be/YiLXQeCZOvs?si=hNZHT3VwK8_BP0LG">Lagu Kebangsaan Laos: Pheng Xat Lao</a></p></h5>
+</div><br>
+<hr>
+<div>
+<h2 id= "tutorial">Tutorial</h2>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TX0uYx_-N7A?si=71VlTCAA-pbpb521" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7bqt5gYwyGA?si=7GE0s_WqRy6QmsIq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9wKSikBP5GI?si=HqR7Wls3xmyiN4by" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mAUjywcCbsg?si=t0Onop5rbWv2YLQ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kckR6wf5xe8?si=5avD1YMa6MUS-X8j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/r9KHXfARdWk?si=htleERXRgeGJE99D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<div class="footer-bottom">
+<div id="kontak" class="social-media">
+<a href="facebook.com/smkluqmanalhakim.kudus"><img src="facebook.png" alt="Facebook"></a>
+<a href="https://www.youtube.com/@smkluqmanalhakimkudus7189"><img src="youtube.png" alt="Youtube"></a>
+<a href="instagram.com/smkluqmanalhakim.kudus/?hl=id"><img src="instagram.png" alt="Instagram"></a>
+</div>
+
+<p> Hak cipta &copy; 2023 Asia Tenggara.Hak Cipta Dilindungi</p>
+</div>
+</body>
+</html>
